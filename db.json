@@ -1,0 +1,40 @@
+{
+  "invoices": [
+    {
+      "price": "203",
+      "passangers": "2",
+      "dateRange": [
+        "16-08-2018",
+        "21-08-2018"
+      ],
+      "id": "req-jl0vkyy9"
+    },
+    {
+      "price": "320",
+      "passangers": "5",
+      "dateRange": [
+        "16-08-2018",
+        "21-08-2018"
+      ],
+      "id": "req-jl0wfgkx"
+    },
+    {
+      "price": "500",
+      "passangers": "1",
+      "dateRange": [
+        "04-08-2018",
+        "09-08-2018"
+      ],
+      "id": "req-jl0wiksp"
+    },
+    {
+      "price": "1000",
+      "passangers": "2",
+      "dateRange": [
+        "04-08-2018",
+        "09-08-2018"
+      ],
+      "id": "req-jl27g4fw"
+    }
+  ]
+}

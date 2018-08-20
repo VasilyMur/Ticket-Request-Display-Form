@@ -1,0 +1,132 @@
+.invoice__form__container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid #e4e4e4;
+    padding: 3rem 2rem;
+    .error {
+        max-width: 50%;
+        margin: 0 auto;
+        color: #fff;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+        padding: 1rem;
+        border-radius: 3px;
+        background: linear-gradient(20deg, rgba(255,0,0,1) 0%, rgba(200,0,0,1) 100%);
+        text-align: center;
+        display: none;
+    }
+    .show {
+        display: block;
+    }
+    .invoice__form {
+        display: grid;
+        grid-template-columns: 1fr 320px;
+        grid-gap: 20px;
+        max-width: 500px;
+        margin: 4rem 0 8rem;
+        align-items: center;
+        padding-left: 5rem;
+        &--labels {
+            display: grid;
+            grid-template-rows: auto;
+            grid-gap: 1.5rem;
+            label {
+                font-weight: bold;
+                line-height: 1.7;
+            }
+        }
+        &--fields {
+            display: grid;
+            grid-template-rows: auto;
+            grid-gap: 1.5rem;
+            .input-unit {
+                display: grid;
+                grid-template-columns: auto 1fr auto;
+                span {
+                    background: #f0f0f0;
+                    padding: 5px 10px 2px;
+                    border: 1px solid #ddd;
+                    font-size: 1.2rem;
+                }
+                .left {
+                    border-right: 0;
+                    border-top-left-radius: 5px;
+                    border-bottom-left-radius: 5px;
+                }
+                .right {
+                    border-left: 0;
+                    border-top-right-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                }
+                img {
+                    max-width: 14px;
+                }
+                label {
+                    display: flex;
+                    justify-content: space-between;
+                }
+                input {
+                    border: 1px solid #ddd;
+                    padding-left: 10px;
+                }
+                input[name="date"] {
+                    border-top-left-radius: 5px;
+                    border-bottom-left-radius: 5px;
+                }
+            }
+            .dates {
+                grid-template-columns: 1fr auto;
+            }
+            input[name="passangers"] {
+                border: 1px solid #ddd;
+                padding-left: 10px;
+                border-radius: 5px;
+            }
+        }
+        .rdr-DateRange {
+            position: absolute;
+            top: 67%;
+            left: 24%;
+        }
+        &--item {
+            .invoice-search {
+                width: 100%;
+                position: relative;
+                input {
+                    width: 100%;
+                    padding: 5px;
+                }
+                ul {
+                    width: 100%;
+                    position: absolute;
+                    padding: 0;
+                    margin: 0;
+                    text-align: left;
+                    z-index: 2;
+                    li {
+                        list-style: none;
+                        background: #fff;
+                        padding: 5px;
+                        border-bottom: 1px solid #ececec;
+                    }
+                }
+            }
+            display: flex;
+            flex-direction: column;
+        }
+        .comment {
+            grid-column: 1 / -1;
+        }
+        button {
+            background: #1E824C;
+            border: 0;
+            padding: 10px 15px;
+            color: #fff;
+            width: 100px;
+            position: absolute;
+            right: 3rem;
+            bottom: 4rem;
+            border-radius: 6%;
+        }
+    }
+}

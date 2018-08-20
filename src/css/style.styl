@@ -1,0 +1,52 @@
+// Import all partials
+@require './_*.styl'
+
+/* APP */
+
+/* Header */
+.main-header {
+  background-color: #222;
+  padding: 10px 20px;
+  color: white;
+  .header-wrap {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/* Header Title */
+.header__title {
+  a {
+    font-size: 2rem;
+    margin: 1rem 0;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+/* HEader Menu */
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 2rem;
+  }
+}
+
+/* Footer */
+footer {
+  background: #191324;
+  padding: 2rem;
+  color: #fff;
+  text-align: center;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
